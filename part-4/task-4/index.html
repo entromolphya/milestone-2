@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="ls"></h2>
+    <script>
+        let x=prompt('Enter a number:');
+        function prime(x){
+            var f=0;
+            for(var i=2;i<x;i++)
+            {
+                if(x%i==0)
+                {
+                    f=1;
+                    break;
+                }
+            }
+            if(f==0) return 'this is a prime number';
+            else return 'this is not a prime number';
+        }
+        document.getElementById('ls').innerHTML=prime(x); 
+    </script>
+</body>
+</html>

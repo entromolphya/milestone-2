@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="pos"></h2>
+    <script>
+        let grade=prompt('Enter a your age:');
+        switch(grade)
+        {
+            case "A+":
+                document.getElementById('pos').innerHTML="gpa:4.00 ";
+                break;
+            case "A":
+                document.getElementById('pos').innerHTML="gpa:3.75 ";
+                break;
+            case "A-":
+                document.getElementById('pos').innerHTML="gpa:3.50 ";
+                break;
+            case "B+":
+                document.getElementById('pos').innerHTML="gpa:3.25 ";
+                break;
+            case "B":
+                document.getElementById('pos').innerHTML="gpa:3.00 ";
+                break;
+            case "B-":
+                document.getElementById('pos').innerHTML="gpa:2.75 ";
+                break;
+            default:
+                document.getElementById('pos').innerHTML="gpa:0.00 ";
+                break;
+        }
+    </script>
+</body>
+</html>

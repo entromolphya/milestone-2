@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="pos"></h2>
+    <script>
+        let x=(prompt('Enter 1st integer:')) ;
+        let y=(prompt('Enter 2nd integer:')) ;
+        let z=(prompt('Enter 3rd integer:')) ;
+        if((x*x + y*y == z*z) || (y*y + z*z == x*x) || (x*x + z*z == y*y)){
+            document.getElementById('pos').innerHTML='This is Pythagorean triplet';
+        }
+        else{
+            document.getElementById('pos').innerHTML='This is not Pythagorean triplet';
+        }
+    </script>
+</body>
+</html>

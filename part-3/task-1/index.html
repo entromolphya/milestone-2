@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="pos"></h2>
+    <script>
+        let x=prompt('Enter a number:');
+        if(x>0){
+            document.getElementById('pos').innerHTML="this is an positive number";
+        }
+        else if(x<0){
+            document.getElementById('pos').innerHTML="this is an negative number";
+        }
+        else{
+            document.getElementById('pos').innerHTML="this is zero!";
+        }
+    </script>
+</body>
+</html>

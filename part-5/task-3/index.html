@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="ls"></h2>
+    <script>
+        var arr={};
+        var o_n=null,o_a=0;
+        var n=prompt('total input number:')
+        for(var i=0;i<n;i++)
+        {
+            var x;
+            var y;
+            x=prompt("enter "+ (i+1) +"th person's name");
+            y=parseInt(prompt("enter "+ (i+1) +"th person's age"));
+            arr[i]={x:y};
+            if(y>o_a){
+                o_a=y;
+                o_n=x;
+            }
+        }
+        document.getElementById('ls').innerHTML='oldest persons name: '+o_n+' and age: '+o_a; 
+    </script>
+</body>
+</html>
